@@ -1,0 +1,244 @@
+
+@font-face {
+    font-family: 'Smedium';
+    src: url(./font/Satoshi-Medium.otf);
+}
+@font-face {
+    font-family: 'Sbold';
+    src: url(./font/Satoshi-Black.otf);
+}
+
+@font-face {
+    font-family: 'Sregulard';
+    src: url(./font/Satoshi-Regular.otf);
+}
+
+body{
+    width: 99vw;
+    overflow: hidden;
+}
+#acceuil{
+    margin:0 auto;
+    width: 100vw;
+}
+#acceuil input{
+margin: 0 32.5%;
+}
+#acceuil h1{
+    margin-top: 2em;
+}
+h1{
+    font-family: 'Sbold';
+    text-align: center;
+    font-size: 5em;
+}
+h2{
+    font-family: 'Sbold';
+    font-size: 3em;
+    margin: 0;
+}
+
+#acceuil input[type="button"],.startinput{
+    padding: 2em 5em;
+    color: white;
+    font-family: 'Sregulard';
+    font-size: 2em;
+    background: black;
+    border-radius: 42px;
+}
+
+.uparrow{
+    background: transparent;
+    border: none;
+    font-size: 3em;
+    position: absolute;
+    top: .1em;
+    left:.3em;
+}
+.logo{
+    height: 4em;
+    position: absolute;
+    bottom: .4em;
+    right: 1em;
+}
+
+/* Settings */
+
+h3{
+    font-family: 'Smedium';
+    font-size: 2.5em;
+    text-align: center;
+    margin: 0;
+}
+h4{
+    font-family: 'Smedium';
+    font-size: 1.25em;
+    line-height: .85;
+}
+
+#setting h3{
+    margin-top: 1.6em;
+}
+.startinput{
+text-align: center;
+margin: 0 33%;
+}
+span{
+    cursor: pointer;
+}
+
+label{
+    font-family: 'Sregulard';
+}
+
+input[type="text"]{
+    width: 35.59%;
+    margin:0 7%;
+    height: 3.5em;
+    background-color: rgb(217, 217, 217);
+    border: none;
+    text-indent: 25px;
+}
+.cont:first-of-type{
+    margin: 0 7%;
+    justify-content: space-between;
+    display: flex;
+}
+
+
+
+#play{
+    display: flex;
+}
+.controls{
+    position: absolute;
+    top: 9em;
+    left: 42vw;
+}
+#team1,#team2{
+    width: 50%;
+    vertical-align: top;
+  
+    height: 98vh;
+}
+#team1{
+    background-color: #1e1e1e;
+}
+#team2{
+    background-color: #d9d9d9;
+}
+.buttons{
+    
+    
+}
+#team2 .core{
+    color: #1e1e1e;
+}
+#team1 .core{
+    color: #d9d9d9;
+}
+
+.score{
+    display: flex;
+    width: 99%;
+    margin-top: 1em;
+}
+#team2 .score{
+    background-color: blue;
+    margin-left: 1%;
+}
+#team1 .score{
+    justify-content: end;
+    background-color: brown;
+}
+
+#team1 h4{
+    margin-right: 39%;
+    text-align: center;
+}
+#team2 h4{
+    margin-left: 39%;
+    text-align: center;
+}
+.controls button{
+    padding: 1em 3em;
+    border: none;
+
+}
+#endGame{
+    background-color: brown;
+    color: white;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
+    grid-gap: 10px; /* Espacement entre les boutons */
+    margin: 0 1em;
+  }
+  #team2 .scoreButton{
+    background-color: #1e1e1e;
+    color: #d9d9d9;
+}
+#team1 .scoreButton{
+    background-color: #d9d9d9;
+}
+  .scoreButton {
+    padding: 3.8em 2em;
+    font-size: 1.2rem;
+    text-align: center;
+  
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .scoreButton:hover {
+    
+  }
+  
+  /* Revoir la disposition pour les écrans plus petits (3 rangées, 2 colonnes) */
+  @media (max-width: 768px) {
+    .buttons {
+      grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
+      grid-template-rows: repeat(3, 1fr); /* 3 rangées pour les 6 boutons */
+    }
+    .scoreButton {
+        padding: 2em;
+        font-size: 1.2rem;
+        text-align: center;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .controls{
+        position: absolute;
+        top: 42em;
+        left: 25vw;
+    }
+    #acceuil input{
+        margin: 0 14.5%;
+        }
+        #acceuil input[type="button"],.startinput{
+            padding: 1em 2em;
+            color: white;
+            font-family: 'Sregulard';
+            font-size: 2em;
+            background: black;
+            border-radius: 42px;
+        }
+        input[type="text"]{
+            width: 34.69%;
+            margin:0 7%;
+            height: 3.5em;
+            background-color: rgb(217, 217, 217);
+            border: none;
+            text-indent: 25px;
+        }
+        .startinput{
+            text-align: center;
+            margin: 0 20%;
+            margin-top: 2em;
+            }
+  }
+  

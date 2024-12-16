@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Jeu</title>
+</head>
+<body>
+  <div id="play">
+    <div class="controls">
+      <button id="resetScores">Réinitialiser</button>
+      <button id="endGame" class="red">Fin</button>
+    </div>
+
+    <div class="team" id="team1">
+      <div class="score"><h4 id="team1Name"></h4>
+      <h2 id="scoreMatch1"></h2></div>
+      
+      <div class="core">
+        <h1 id="scorePartie1"></h1>
+      </div>
+      <div class="buttons">
+        <button class="scoreButton" data-team="1" data-score="1">+1</button>
+        <button class="scoreButton" data-team="1" data-score="2">+2</button>
+        <button class="scoreButton" data-team="1" data-score="3">+3</button>
+        <button class="scoreButton" data-team="1" data-score="-1">-1</button>
+        <button class="scoreButton" data-team="1" data-score="-2">-2</button>
+        <button class="scoreButton" data-team="1" data-score="-3">-3</button>
+      </div>
+    </div>
+
+    <div class="team" id="team2">
+      <div class="score">  <h2 id="scoreMatch2"></h2>
+      <h4 id="team2Name"></h4></div>
+    
+      <div class="core">
+        <h1 id="scorePartie2"></h1>
+      </div>
+      <div class="buttons">
+        <button class="scoreButton" data-team="2" data-score="1">+1</button>
+        <button class="scoreButton" data-team="2" data-score="2">+2</button>
+        <button class="scoreButton" data-team="2" data-score="3">+3</button>
+        <button class="scoreButton" data-team="2" data-score="-1">-1</button>
+        <button class="scoreButton" data-team="2" data-score="-2">-2</button>
+        <button class="scoreButton" data-team="2" data-score="-3">-3</button>
+      </div>
+    </div>
+
+    <img src="./pbb_logo.svg" class="logo" alt="Logo">
+  </div>
+
+  <script src="play.js"></script>
+</body>
+</html>

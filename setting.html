@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Paramètres</title>
+</head>
+<body>
+  <div id="setting">
+    <input type="button" class="uparrow" value="←" id="backButton">
+    <h3>2 TEAMS</h3>
+    <div class="cont">
+      <label for="firstTeam">First Team</label>
+      <label for="secondTeam">Second Team</label>
+    </div>
+
+    <div class="cont">
+      <input type="text" id="firstTeam" placeholder="Entrez un nom">
+      <input type="text" id="secondTeam" placeholder="Entrez un nom">
+    </div>
+
+    <h3>
+      <span id="decrementMeilleurEn">◄</span>
+      MEILLEUR EN <span id="meilleurEn">3</span>
+      <span id="incrementMeilleurEn">►</span>
+    </h3>
+
+    <h3>
+      <span id="decrementPartieEn">◄</span>
+      PARTIE EN <span id="partieEn">2</span>
+      <span id="incrementPartieEn">►</span>
+    </h3>
+
+    <input type="button" class="startinput" value="Commencer" id="startGame">
+    <img src="/pbb_logo.svg" class="logo" alt="Logo">
+  </div>
+
+  <script src="setting.js"></script>
+</body>
+</html>
