@@ -243,7 +243,7 @@ input[type="text"]{
   }
 
     /* Revoir la disposition pour les écrans plus petits (3 rangées, 2 colonnes) */
-    @media (max-width: 426px) {
+    @media (max-width: 432px) {
         #play{
             width: 95vw;
         }
@@ -270,7 +270,7 @@ input[type="text"]{
           .controls{
             position: absolute;
             top: 42em;
-            left: 17.5vw;
+            left: 20.5vw;
         }
         #acceuil input{
             margin: 0 10%;
