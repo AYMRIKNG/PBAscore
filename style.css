@@ -127,8 +127,9 @@ input[type="text"]{
 }
 .controls{
     position: absolute;
-    top: 9em;
-    left: 42vw;
+    top: 7em;
+    left: 50%;
+    transform: translateX(-50%);
 }
 #team1,#team2{
     width: 50%;
@@ -158,6 +159,7 @@ input[type="text"]{
 #team2 .score{
     background-color: blue;
     margin-left: 1%;
+    color: #d9d9d9;
 }
 #team1 .score{
     justify-content: end;
@@ -173,7 +175,7 @@ input[type="text"]{
     text-align: center;
 }
 .controls button{
-    padding: 1em 3em;
+    padding: 1em 2.5em;
     border: none;
 
 }
@@ -187,6 +189,7 @@ input[type="text"]{
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes sur grand écran */
     grid-gap: 10px; /* Espacement entre les boutons */
     margin: 0 1em;
+    height: 55vh;
   }
   #team2 .scoreButton{
     background-color: #1e1e1e;
@@ -210,7 +213,7 @@ input[type="text"]{
   }
   
   /* Revoir la disposition pour les écrans plus petits (3 rangées, 2 colonnes) */
-  @media (max-width: 768px) {
+  @media (max-width: 1058px) {
     .buttons {
       grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
       grid-template-rows: repeat(3, 1fr); /* 3 rangées pour les 6 boutons */
