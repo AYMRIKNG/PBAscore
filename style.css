@@ -14,15 +14,16 @@
 }
 
 body{
-    width: 99vw;
+    width: 100%;
     overflow: hidden;
 }
 #acceuil{
-    margin:0 auto;
-    width: 100vw;
+    display: grid;
+    place-items: center;      /* Centrer à la fois horizontalement et verticalement */   
+    width: 100%;
 }
 #acceuil input{
-margin: 0 32.5%;
+
 }
 #acceuil h1{
     margin-top: 2em;
@@ -37,6 +38,7 @@ h2{
     font-size: 3em;
     margin: 0;
 }
+
 
 #acceuil input[type="button"],.startinput{
     padding: 2em 5em;
@@ -75,35 +77,48 @@ h4{
     font-size: 1.25em;
     line-height: .85;
 }
+#setting{
+    display: grid;
+  place-items: center;    
+  width: 100%; 
+}
 
 #setting h3{
     margin-top: 1.6em;
 }
-.startinput{
-text-align: center;
-margin: 0 33%;
-}
+
 span{
     cursor: pointer;
 }
 
-label{
+h5{
     font-family: 'Sregulard';
+    margin: 3% 0;
 }
-
+.startinput{
+    margin-top: 3em;
+}
 input[type="text"]{
-    width: 35.59%;
-    margin:0 7%;
-    height: 3.5em;
+    
+    height: 3.75em;
     background-color: rgb(217, 217, 217);
     border: none;
     text-indent: 25px;
 }
-.cont:first-of-type{
-    margin: 0 7%;
-    justify-content: space-between;
-    display: flex;
+.cont{
+   width: 75%;
+
+   
+  
+
 }
+.cont input{
+    width: 100%;
+}
+.cont label{
+    width: 30%;
+}
+
 
 
 
@@ -127,10 +142,7 @@ input[type="text"]{
 #team2{
     background-color: #d9d9d9;
 }
-.buttons{
-    
-    
-}
+
 #team2 .core{
     color: #1e1e1e;
 }
@@ -203,98 +215,7 @@ input[type="text"]{
       grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
       grid-template-rows: repeat(3, 1fr); /* 3 rangées pour les 6 boutons */
     }
-    .scoreButton {
-        padding: 2em;
-        font-size: 1.2rem;
-        text-align: center;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      .controls{
-        position: absolute;
-        top: 42em;
-        left: 25vw;
-    }
-    #acceuil input{
-        margin: 0 14.5%;
-        }
-        #acceuil input[type="button"],.startinput{
-            padding: 1em 2em;
-            color: white;
-            font-family: 'Sregulard';
-            font-size: 2em;
-            background: black;
-            border-radius: 42px;
-        }
-        input[type="text"]{
-            width: 34.69%;
-            margin:0 7%;
-            height: 3.5em;
-            background-color: rgb(217, 217, 217);
-            border: none;
-            text-indent: 25px;
-        }
-        .startinput{
-            text-align: center;
-            margin: 0 20%;
-            margin-top: 2em;
-            }
+   
   }
 
-    /* Revoir la disposition pour les écrans plus petits (3 rangées, 2 colonnes) */
-    @media (max-width: 460px) {
-        #play{
-            width: 95vw;
-        }
-        #acceuil h1{
-            margin-top: 4.5em;
-            font-size: 3.5em;
-        }
-        .buttons {
-          grid-template-columns: repeat(2, 1fr); /* 2 colonnes sur petits écrans */
-          grid-template-rows: repeat(3, 1fr); /* 3 rangées pour les 6 boutons */
-        }
-        #setting h3{
-            width: 97%;
-            margin-top: 2.5em;
-        }
-        .scoreButton {
-            padding: 1.2em;
-            font-size: 1.2rem;
-            text-align: center;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-          }
-          .controls{
-            position: absolute;
-            top: 42em;
-            left: 20.5vw;
-        }
-        #acceuil input{
-            margin: 0 10%;
-            }
-            #acceuil input[type="button"],.startinput{
-                padding: 1em 2em;
-                color: white;
-                font-family: 'Sregulard';
-                font-size: 2em;
-                background: black;
-                border-radius: 42px;
-            }
-            input[type="text"]{
-                width: 40%;
-                margin:0 4%;
-                height: 3.5em;
-                background-color: rgb(217, 217, 217);
-                border: none;
-                text-indent: 25px;
-            }
-            .startinput{
-                text-align: center;
-                margin: 0 14%;
-                margin-top: 2em;
-                }
-      }
-  
+   
